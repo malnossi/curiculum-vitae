@@ -1,0 +1,190 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.70\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Mohamed}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{AL NOSSIRAT}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge Ingénieur E-Santé - Tech Lead Application Web} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.300\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{Toulouse}\\
+	\icon{Phone}{12}{06 05 53 50 06}\\
+	\icon{At}{12}{\href{mailto:mohamed.w.nossirat@gmail.com}{mohamed.w.nossirat@gmail.com}}\\
+	\icon{Github}{12}{\href{https://github.com/malnossi}{github.com/malnossi}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Profil}
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	Diplomé de l'école d'ingénieurs ISIS (Castres), j'ai effectué mon cursus en apprentissage au sein du
+	Centre Hospitalier de Châteaubriant, puis à Clarisys Informatique.\\
+	Depuis septembre 2023, j'occupe le poste de Tech Lead chez Portalliance.
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{5.5}
+		\baritem{Docker}{75}
+		\baritem{Gitlab CI}{65}
+		\baritem{Python}{90}
+		\baritem{Django - FastAPI - Flask}{90}
+		\baritem{Git}{90}
+		\baritem{Bash}{60}
+		\baritem{PostgreSQL}{60}
+	\end{barchart}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{09/2023 --\\\footnotesize{CDI}}
+		{Tach Lead}
+		{Portalliance}
+		{Développement d'une plateforme collaborative à destination des ingénieurs en calcul de structures méchaniques.\\
+		- Conception de l'architecture Backend (Python/Django)\\
+		- Conception de l'architecture de l'interface utilisateur (ReactJS/NextJS)\\
+		- Maintenance des API low-level (Go/C++)\\
+		- Distribution des tâches en arrière plan (Celery/Redis)\\
+		- Containerisation des APIs (Docker)\\
+		- CI / CD pour le deploiement automatique de la plateforme en mode Staging, Production
+		}
+	\entry
+		{11/2021 -- 09/2023\\\footnotesize{Alternance}}
+		{Développeur Full-Stack}
+		{Clarisys Informatique}
+		{
+			- Intégration du framework VueJS\\
+			- Conception et implémentation d’un module de
+			Gestion de Maintenance Assistée par Ordinateur
+			(GMAO)\\
+			- Implémentation du module d’envoi de messages
+			sécurisés (MSSanté)\\
+			- Implémentation du module de cryptage de messages
+			APICrypt\\
+			- Maintenance du module de colisage\\
+		}
+	\entry
+		{11/2020 -- 11/2021\\\footnotesize{Alternance}}
+		{Assistant Ingénieur – Chef de projet}
+		{Center Hospitalier de Châteaubriant}
+		{
+			- Chef de projet déploiement du logiciel de
+			reconnaissance vocale Dragon\\
+			- Développement de l’interface de changement de mot
+			de passe des personnels de l'hôpital\\
+			- Chef de projet solution de « Single time login »\\
+			- Développement de l’interface de gestion des résidents
+			en EHPAD / Système de notification de la liste
+			d’attente d’EHPAD\\
+			- Chef de projet / formateur de l’audit de cybersécurité,
+			projet de sensibilisation des personnels hospitaliers contre le Phishing
+			}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Formation}
+
+\begin{entrylist}
+	\entry
+		{2020 -- 2023}
+		{Diplôme d’ingénieur}
+		{École d'ingénieurs ISIS}
+		{Castres - France}
+	\entry
+		{2010-2016}
+		{Diplôme universitaire d’odontologie}
+		{Université de Damas}
+		{Damas - Syrie}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Langues}
+	
+	\textbf{Arabe} - Langue maternelle\\
+	\textbf{Français} - Langue courante\\
+	\textbf{Anglais} - TOEIC 985/990
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Passe temps}
+
+	- Coder\\
+	- Ping-Pong\\
+	- Cinéma
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Vie Associative}
+	
+	\textbf{Toulouse Way} - Jeune association d'aide à l'intégration des actifs étrangers dans le monde de la tech 
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
